@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form thông tin sản phẩm</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Thông tin sản phẩm</legend>
+            <label for="product_name">Tên sản phẩm:</label>
+            <input type="text" name="product_name" id="product_name" required>
+            <label for="amount">Số lượng:</label>
+            <input type="text" name="amount" id="amount" required>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin giao hàng</legend>
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" name="fullname" id="fullname" required>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required>
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" name="address" id="address" required>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin thanh toán</legend>
+            <label for="pay_method">Phương thức thanh toán:</label>
+            <select name="pay_method" id="pay_method" required>
+                <option value="ship_sode">Thanh toán khi nhận hàng</option>
+                <option value="momo_wallet">Thanh toán qua ví momo</option>
+                <option value="credit_card">Thanh toán qua thẻ ghi nợ</option>
+            </select>
+        </fieldset><br>
+        <input type="button" value="Đặt hàng">
+    </form>
+</body>
+</html>
